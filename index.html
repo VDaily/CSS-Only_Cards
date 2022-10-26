@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <h1 class="header__title">Бабуленькины котятки</h1>
+      </div>
+    </header>
+  
+    <input type="radio" name="menu-name" id="menu-name1" class="main__input main__input-1"/>
+    <input type="radio" name="menu-name" id="menu-name2" class="main__input main__input-2"/>
+    <input type="radio" name="menu-name" id="menu-name3" class="main__input main__input-3"/>
+    <input type="radio" name="menu-name" id="menu-name4" class="main__input main__input-4"/>
+    <main class="main">
+      <div class="container">
+        <section class="menu">
+          <ul class="menu__list">
+            <li for="menu-name1" class="menu__item menu__item-1">
+              <label for="menu-name1" class="menu__label">Абиссинская</label>
+            </li>
+            <li class="menu__item menu__item-2">
+              <label for="menu-name2" class="menu__label">Британская</label>
+            </li>
+            <li class="menu__item menu__item-3">
+              <label for="menu-name3" class="menu__label">Русская голубая</label>
+  
+            </li>
+            <li class="menu__item menu__item-4">
+              <label for="menu-name4" class="menu__label">Сиамская</label>            
+            </li>
+          </ul>
+        </section>
+        <div class="content">
+<!--               
+              group-1 / Абиссинская
+              group-2 / Британская
+              group-3 / Русская голубая
+              group-4 / Сиамская
+           -->
+          <div data-info="Лиззи, 3 года" class="card group-1">
+            <img src="/src/assets/images/1.jpg" alt="Абиссинская" class="card__photo"> 
+          </div>
+          <div data-info="Мальта, 1 год" class="card group-3">
+            <img src="/src/assets/images/2.jpg" alt="Русская голубая" class="card__photo">
+          </div>
+          <div data-info="Ватсон, 7 месяцев" class="card group-2">
+            <img src="/src/assets/images/3.jpg" alt="Британская" class="card__photo">
+          </div>
+          <div data-info="Смайлик, 2 года" class="card group-2">
+            <img src="/src/assets/images/4.jpg" alt="Британская" class="card__photo">
+          </div>
+          <div data-info="Дымок, 4 месяца" class="card group-3">
+            <img src="/src/assets/images/5.jpg" alt="Русская голубая" class="card__photo">
+          </div>
+          <div data-info="Осень, 6 лет" class="card group-1">
+            <img src="/src/assets/images/6.jpg" alt="Абиссинская" class="card__photo">
+          </div>  
+          <div data-info="Пушок, 2 года" class="card group-3">
+            <img src="/src/assets/images/7.jpg" alt="Русская голубая" class="card__photo">
+          </div>  
+          <div data-info="Пуся, 3 месяца" class="card group-4">
+            <img src="/src/assets/images/8.jpg" alt="Сиамская" class="card__photo">
+          </div>
+          <div data-info="Котя, 1 год" class="card group-4">
+            <img src="/src/assets/images/9.jpg" alt="Сиамская" class="card__photo">
+          </div>
+          <div data-info="Флекс, 8 лет" class="card group-1">
+            <img src="/src/assets/images/10.jpg" alt="Абиссинская" class="card__photo"> 
+          </div>
+          <div data-info="Маруся, 4 года" class="card group-3">
+            <img src="/src/assets/images/11.jpg" alt="Русская голубая" class="card__photo"> 
+          </div>
+          <div data-info="Шерлок, 5 месяцев" class="card group-2">
+            <img src="/src/assets/images/12.jpg" alt="Британская" class="card__photo">
+          </div>
+          <div data-info="Сима, 5 лет" class="card group-4">
+            <img src="/src/assets/images/13.jpg" alt="Сиамская" class="card__photo">
+          </div>
+          <div data-info="Флекс, 8 лет" class="card group-1">
+            <img src="/src/assets/images/10.jpg" alt="Абиссинская" class="card__photo"> 
+          </div>
+          <div data-info="Маруся, 4 года" class="card group-3 ">
+            <img src="/src/assets/images/11.jpg" alt="Русская голубая" class="card__photo"> 
+          </div>
+          <div data-info="Шерлок, 5 месяцев" class="card group-2">
+            <img src="/src/assets/images/12.jpg" alt="Британская" class="card__photo">
+          </div>
+          <div data-info="Сима, 5 лет" class="card group-4">
+            <img src="/src/assets/images/13.jpg" alt="Сиамская" class="card__photo">
+          </div>
+        </div>
+        <section class="rating">
+          <h1 class="rating__header-title">Рейтинг</h1>
+          <label for="order" class="rating__label">По убыванию</label>
+          <input type="checkbox" id="order" class="rating__input">
+          
+          <div class="rating__main">
+            <div class="rating__item rating__order9">
+              <span class="rating__title">Абиссинская</span>
+              <div class="rating__content">
+                <span class="rating__scale rating__scale90"></span>
+                <span class="rating__number">9</span>
+              </div>
+            </div>
+            <div class="rating__item rating__order8">
+              <span class="rating__title">Британская</span>
+              <div class="rating__content">
+                <span class="rating__scale rating__scale80"></span>
+                <span class="rating__number">8</span>
+              </div>
+            </div>
+            <div class="rating__item rating__order10">
+              <span class="rating__title">Русская голубая</span>
+              <div class="rating__content">
+                <span class="rating__scale rating__scale100"></span>
+                <span class="rating__number">10</span>
+              </div>
+            </div>
+            <div class="rating__item rating__order4">
+              <span class="rating__title">Сиамская</span>
+              <div class="rating__content">
+                <span class="rating__scale rating__scale40"></span>
+                <span class="rating__number">4</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__copyright">
+          <p>&#169 ООО Бабуленькины котятки, 2022</p>
+        </div>
+      
+        <div class="footer__address">
+          <p>Наш адрес: улица Котовая, д.5</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div>  
+</body>
+</html>
